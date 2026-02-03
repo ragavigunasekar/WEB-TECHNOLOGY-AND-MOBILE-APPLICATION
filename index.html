@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chennai Map with Hotspots</title>
+
+
+    <link rel="stylesheet" href="style.css">
+
+    
+    <style>
+        h1 {
+            color: darkblue;
+            text-align: center;
+        }
+
+        .map-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        iframe {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Chennai City Map</h1>
+
+    <!-- Inline CSS -->
+    <p style="text-align:center; color:green; font-size:18px;">
+        Click on the hotspots to explore Chennai landmarks
+    </p>
+
+ 
+    <div class="map-container">
+        <img src="chennai-map.jpg" alt="Chennai Map" usemap="#chennailinks" width="500" height="400">
+
+        <map name="chennailinks">
+            <area shape="rect" coords="50,100,150,200"
+                  href="https://en.wikipedia.org/wiki/Marina_Beach" target="_blank">
+            <area shape="rect" coords="200,80,300,180"
+                  href="https://en.wikipedia.org/wiki/Chennai_Central_railway_station" target="_blank">
+            <area shape="rect" coords="350,200,450,300"
+                  href="https://en.wikipedia.org/wiki/Fort_St._George,_India" target="_blank">
+        </map>
+    </div>
+
+    <br><br>
+
+  
+    <h2 style="text-align:center;">Embedded Frame</h2>
+    <div style="text-align:center;">
+        <iframe src="https://en.wikipedia.org/wiki/Chennai"
+                width="600"
+                height="300">
+        </iframe>
+    </div>
+
+    <br><br>
+
+  
+    <div class="links">
+        <a href="https://www.tamilnadutourism.tn.gov.in" target="_blank">Tamil Nadu Tourism</a> |
+        <a href="#">Back to Top</a>
+    </div>
+
+</body>
+</html>
