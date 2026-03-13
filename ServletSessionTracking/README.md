@@ -77,3 +77,4 @@ response.sendRedirect("login.html");
 Result
 A simple login system is created where the user's session is tracked using HttpSession, demonstrating session management and protected page access in Java Servlets.
 
+
