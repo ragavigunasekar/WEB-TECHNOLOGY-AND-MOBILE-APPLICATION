@@ -1,67 +1,54 @@
-# User Form Servlet
+# GET vs POST Servlet
 
-## Experiment No: 4
-
-**Title:** Web Form Processing using Java Servlet
-
----
-
-## Aim
-
-To create a simple web application that accepts a user's **name** and **age** through an HTML form and processes the data using a Java Servlet. The servlet retrieves the input values and displays them back on the browser.
-
----
+## Title
+HTTP GET and POST Method Demonstration using Java Servlet
 
 ## Description
+This project demonstrates the difference between GET and POST methods in HTTP using an HTML form and a Java Servlet.
 
-This project demonstrates basic **form handling using Java Servlets**.
-A web form is created using HTML where the user enters their name and age.
-When the form is submitted, a servlet processes the request, retrieves the submitted values, and generates a response displaying the user's information.
-
----
+The user enters Name and Email, and the data is processed using:
+- doGet() method for GET requests
+- doPost() method for POST requests
 
 ## Technologies Used
+- HTML
+- Java Servlet
+- Apache Tomcat
+- Java (JDK)
 
-* HTML
-* Java Servlet
-* Apache Tomcat
-* Java
+## Files
+- getpost.html
+- GetPostServlet.java
+- web.xml (optional)
 
----
+## Functionality
+- User enters Name and Email
+- Chooses submission method (GET or POST)
+- GET: Data is sent through URL
+- POST: Data is sent through request body
+- Servlet processes and displays the data
 
-## Project Structure
+## Key Difference
+GET:
+- Data visible in URL
+- Less secure
+- Limited data size
 
-```
-user-form-servlet
-│
-├── index.html
-├── UserServlet.java
-└── web.xml
-```
+POST:
+- Data not visible in URL
+- More secure
+- No size limit
 
----
+## How to Run
+1. Deploy the project in Apache Tomcat
+2. Start the server
+3. Open browser
+4. Run: http://localhost:8080/project-name/getpost.html
+5. Test both GET and POST methods
 
-## How It Works
-
-1. The user opens the HTML form in the browser.
-2. The user enters their **name** and **age**.
-3. The form sends the data to the servlet using the **POST** method.
-4. The servlet retrieves the values using `request.getParameter()`.
-5. The servlet generates a response displaying the user's name and age.
-
----
-
-## Example Output
-
-```
-Hello, John!
-You are 20 years old.
-```
-
----
+## Output
+- GET: Data visible in URL and displayed in browser
+- POST: Data not visible in URL and displayed in browser
 
 ## Result
-
-The servlet successfully processes the HTML form data and displays the user's name and age in the browser.
-
----
+The program successfully demonstrates the difference between HTTP GET and POST methods using a Java Servlet.
